@@ -66,6 +66,32 @@ public class Main {
         System.out.println(vendor.getAddressDetails());
         System.out.println(vendor.getContactDetails());
 
+        System.out.println("*******************************************");
+
+        // parameterized constructor object
+
+        Customer customer1 = new Customer(1,"Clark","0123456789","clark@superman.com","Florida","Miami","M city",560000);
+        System.out.println(customer1.id);
+        System.out.println(customer1.contactName);
+        System.out.println(customer1.contactNumber);
+        System.out.println(customer1.addressCity);
+
+        System.out.println("Above we have parametrized constructors data and Below is its copy constructor");
+
+
+        // object of copy constructor
+
+        Customer customer2 = new Customer(customer1);
+
+        System.out.println(customer1.id);
+        System.out.println(customer1.contactName);
+        System.out.println(customer1.contactNumber);
+        System.out.println(customer1.addressCity);
+
+
+
+
+
 
 
 
